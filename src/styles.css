@@ -63,6 +63,7 @@ header > .social-media > a > svg {
 
 .welcome {
   height: 500px;
+  margin-left: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,7 +72,6 @@ header > .social-media > a > svg {
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: right;
-  margin-left: 130px;
 }
 
 .welcome > h1 {
@@ -97,11 +97,11 @@ header > .social-media > a > svg {
 .profile > .avatar {
   width: 60px;
   height: 60px;
+  margin-right: 20px;
   border-radius: 50%;
   background-image: url('img/account-image-1.jpg');
   background-position: center;
   background-size: 100%;
-  margin-right: 20px;
 }
 
 .profile > .info > .date {
@@ -114,10 +114,10 @@ header > .social-media > a > svg {
   height: 110px;
   margin: 70px auto 0;
   background-color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.45);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.45);
 }
 
 .subscribe > p {
@@ -128,10 +128,10 @@ header > .social-media > a > svg {
 .subscribe > input {
   width: 17%;
   height: 30%;
-  border: 1px solid #d3d3d3;
   font-size: 15px;
-  outline: none;
   padding-left: 20px;
+  border: 1px solid #d3d3d3;
+  outline: none;
 }
 
 .subscribe > input:hover {
@@ -141,9 +141,14 @@ header > .social-media > a > svg {
 .subscribe > button {
   width: 12%;
   height: 40%;
+  margin-right: 35px;
   font-size: 12px;
   background-color: #000000;
   color: #ffffff;
   border: 1px solid #000000;
-  margin-right: 35px;
+  outline: none;
+}
+
+.subscribe > button:hover {
+  color: rgba(206, 144, 255, 1);
 }
