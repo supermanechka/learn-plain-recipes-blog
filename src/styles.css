@@ -60,3 +60,90 @@ header > .social-media > a > svg {
   width: 15px;
   height: 15px;
 }
+
+.welcome {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url('img/welcome.png');
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right;
+  margin-left: 130px;
+}
+
+.welcome > h1 {
+  width: 600px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.welcome > p {
+  width: 550px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.profile {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile > .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url('img/account-image-1.jpg');
+  background-position: center;
+  background-size: 100%;
+  margin-right: 20px;
+}
+
+.profile > .info > .date {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.subscribe {
+  width: 90%;
+  height: 110px;
+  margin: 70px auto 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.45);
+}
+
+.subscribe > p {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.subscribe > input {
+  width: 17%;
+  height: 30%;
+  border: 1px solid #d3d3d3;
+  font-size: 15px;
+  outline: none;
+  padding-left: 20px;
+}
+
+.subscribe > input:hover {
+  color: rgba(206, 144, 255, 1);
+}
+
+.subscribe > button {
+  width: 12%;
+  height: 40%;
+  font-size: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  margin-right: 35px;
+}
