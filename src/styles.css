@@ -1,6 +1,6 @@
 body {
   width: 100%;
-  margin: 0;
+
   background-color: #fefefe;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
@@ -114,7 +114,7 @@ header > .social-media > a > svg {
   height: 110px;
   margin: 70px auto 0;
   background-color: #ffffff;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -144,11 +144,77 @@ header > .social-media > a > svg {
   margin-right: 35px;
   font-size: 12px;
   background-color: #000000;
-  color: #ffffff;
   border: 1px solid #000000;
+  color: #ffffff;
   outline: none;
 }
 
 .subscribe > button:hover {
   color: rgba(206, 144, 255, 1);
+}
+
+.photo-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.recipe-card {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-photo {
+  width: 240px;
+  height: 330px;
+  background-size: 100%;
+  background-position: center;
+}
+
+.recipe-1 {
+  background-image: url('img/recipe-1.jpg');
+}
+
+.recipe-2 {
+  background-image: url('img/recipe-2.jpg');
+  background-size: 250%;
+}
+
+.recipe-3 {
+  background-image: url('img/recipe-3.jpg');
+  background-size: 120%;
+}
+
+.recipe-4 {
+  background-image: url('img/recipe-4.jpg');
+  background-size: 120%;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: auto;
+  font-family: 'Roboto Mono', sans-serif;
+  margin-top: 5px;
+  font-size: 12px;
+  color: grey;
+}
+
+.icons > p:first-of-type {
+  margin-right: 15px;
+}
+
+.icons > svg {
+  width: 19px;
+  height: 19px;
+  margin-right: 3px;
+}
+
+.article {
+  line-height: 20px;
 }
