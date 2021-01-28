@@ -1,6 +1,6 @@
 body {
   width: 100%;
-
+  margin: 0 auto;
   background-color: #fefefe;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
@@ -99,7 +99,7 @@ header > .social-media > a > svg {
   height: 60px;
   margin-right: 20px;
   border-radius: 50%;
-  background-image: url('img/account-image-1.jpg');
+  background-image: url('img/avatar-1.jpg');
   background-position: center;
   background-size: 100%;
 }
@@ -217,4 +217,51 @@ header > .social-media > a > svg {
 
 .article {
   line-height: 20px;
+}
+
+.one-recipe-section {
+  height: 400px;
+  margin: 70px 90px 0 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('img/one-recipe-section-photo.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 50%;
+}
+
+.block-one-recipe-section {
+  margin-left: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.block-one-recipe-section > h1 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.block-one-recipe-section > p {
+  width: 550px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.block-one-recipe-section > p:nth-of-type(2) {
+  margin: 0;
+}
+
+.block-one-recipe-section > .icons {
+  margin-right: 0;
+}
+
+.block-one-recipe-section > .profile > .avatar {
+  background-image: url('img/avatar-2.jpg');
 }
