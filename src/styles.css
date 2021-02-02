@@ -165,7 +165,7 @@ header > .social-media > a > svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .recipe-photo {
@@ -173,6 +173,7 @@ header > .social-media > a > svg {
   height: 330px;
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .recipe-1 {
@@ -264,4 +265,41 @@ header > .social-media > a > svg {
 
 .block-one-recipe-section > .profile > .avatar {
   background-image: url('img/avatar-2.jpg');
+}
+
+.second-recipe-section {
+  margin: 70px 90px 0 90px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.second-recipe-section > .recipe-card > .profile > .avatar {
+  width: 45px;
+  height: 45px;
+}
+
+.second-recipe-section > .recipe-card:first-of-type > .profile > .avatar {
+  background-image: url('img/avatar-3.jpg');
+}
+
+.second-recipe-section > .recipe-card:first-of-type {
+  height: 320px;
+  margin-bottom: 40px;
+}
+
+.recipe-5 {
+  background-image: url('img/recipe-5.jpg');
+}
+
+.second-recipe-section > .recipe-card:nth-of-type(2) {
+  height: 320px;
+}
+
+.second-recipe-section > .recipe-card:nth-of-type(2) > .profile > .avatar {
+  background-image: url('img/avatar-4.jpg');
+}
+
+.recipe-6 {
+  background-image: url('img/recipe-6.jpg');
 }
