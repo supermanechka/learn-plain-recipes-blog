@@ -382,13 +382,14 @@ input:hover {
   justify-content: center;
   align-items: center;
   background-image: url('img/photo-1.jpeg');
-  background-position: 100%;
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .subscribe-now p {
   font-weight: 500;
   font-size: 20px;
+  color: #ffffff;
 }
 
 .subscribe-now > button {
@@ -396,9 +397,9 @@ input:hover {
   height: 20%;
   margin-right: 35px;
   font-size: 12px;
-  background-color: #000000;
-  border: 1px solid #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #000000;
   outline: none;
 }
 
