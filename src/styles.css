@@ -406,3 +406,55 @@ input:hover {
 .subscribe-now > button:hover {
   color: rgba(206, 144, 255, 1);
 }
+
+.instagram-block {
+  margin: 70px 90px 0 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-block p {
+  line-height: 20px;
+}
+
+.instagram-photo {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.instagram-block > .instagram-photo > .photo {
+  width: 170px;
+  height: 170px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.photo-1 {
+  background-image: url('img/instagram-photo-1.jpeg');
+}
+
+.photo-2 {
+  background-image: url('img/instagram-photo-2.jpeg');
+}
+
+.photo-3 {
+  background-image: url('img/instagram-photo-3.jpeg');
+}
+
+.photo-4 {
+  background-image: url('img/instagram-photo-4.jpeg');
+}
+
+.photo-5 {
+  background-image: url('img/instagram-photo-5.jpeg');
+}
+
+.photo-6 {
+  background-image: url('img/instagram-photo-6.jpeg');
+}
