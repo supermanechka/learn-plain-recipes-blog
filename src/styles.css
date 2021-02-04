@@ -165,7 +165,7 @@ header > .social-media > a > svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .recipe-photo {
@@ -173,6 +173,7 @@ header > .social-media > a > svg {
   height: 300px;
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .recipe-1 {
@@ -264,4 +265,110 @@ header > .social-media > a > svg {
 
 .block-one-recipe-section > .profile > .avatar {
   background-image: url('img/avatar-2.jpg');
+}
+
+.second-recipe-section {
+  margin: 70px 90px 0 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.second-recipe-section > aside {
+  width: 25%;
+}
+
+.second-recipe-section > main {
+  width: 40%;
+}
+
+.second-recipe-section > aside > .recipe-card {
+  width: 100%;
+  height: 320px;
+}
+
+.second-recipe-section > aside > .recipe-card + .recipe-card {
+  margin-top: 40px;
+}
+
+.second-recipe-section > aside > .recipe-card > .recipe-photo {
+  width: 100%;
+}
+
+.second-recipe-section > aside > .recipe-card > .profile > .avatar {
+  width: 45px;
+  height: 45px;
+}
+
+.second-recipe-section
+  > aside
+  > .recipe-card:first-of-type
+  > .profile
+  > .avatar {
+  background-image: url('img/avatar-3.jpg');
+}
+
+.recipe-5 {
+  background-image: url('img/recipe-5.jpg');
+}
+
+.second-recipe-section
+  > aside
+  > .recipe-card:nth-of-type(2)
+  > .profile
+  > .avatar {
+  background-image: url('img/avatar-4.jpg');
+}
+
+.recipe-6 {
+  background-image: url('img/recipe-6.jpg');
+}
+
+.big-recipe-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.big-recipe-card > .photo {
+  background-image: url('img/recipe-7.jpg');
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: 100%;
+}
+
+.big-recipe-card h1 {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.big-recipe-card p {
+  width: 100%;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.big-recipe-card > .content {
+  margin: 0 5% 0 5%;
+}
+
+.big-recipe-card .avatar {
+  background-image: url('img/avatar-5.jpg');
+}
+
+.recipe-8 {
+  width: 100%;
+  background-image: url('img/recipe-8.jpg');
+}
+
+.second-recipe-section
+  > aside:last-of-type
+  > .recipe-card
+  > .profile
+  > .avatar {
+  background-image: url('img/avatar-1.jpg');
 }
