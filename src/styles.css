@@ -458,3 +458,39 @@ input:hover {
 .photo-6 {
   background-image: url('img/instagram-photo-6.jpeg');
 }
+
+footer {
+  height: 90px;
+  padding: 0 30px;
+  margin: 70px 90px 0 90px;
+  box-sizing: border-box;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer > p {
+  line-height: 20px;
+  font-weight: 300;
+}
+
+footer > .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+footer > .social-media > a {
+  width: 15px;
+  height: 15px;
+}
+
+footer > .social-media > a + a {
+  margin-left: 20px;
+}
+
+footer > .social-media > a > svg {
+  width: 15px;
+  height: 15px;
+}
