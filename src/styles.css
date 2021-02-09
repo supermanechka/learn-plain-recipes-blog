@@ -168,6 +168,7 @@ input:hover {
 
 .subscribe > button:hover {
   cursor: pointer;
+  background-color: rgba(194 137 239);
 }
 
 .photo-gallery {
@@ -274,6 +275,7 @@ input:hover {
 
 .one-recipe-section p {
   font-weight: 300;
+  line-height: 20px;
 }
 
 .one-recipe-section .avatar {
@@ -380,6 +382,7 @@ input:hover {
 .big-recipe-card p {
   width: 100%;
   font-weight: 300;
+  line-height: 20px;
 }
 
 .big-recipe-card .avatar {
@@ -437,6 +440,7 @@ input:hover {
 
 .subscribe-now > button:hover {
   cursor: pointer;
+  background-color: rgba(194 137 239);
 }
 
 .instagram-block {
