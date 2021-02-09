@@ -68,7 +68,6 @@ header > .social-media > a > svg {
 
 .welcome {
   height: 500px;
-  margin-left: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,7 +79,8 @@ header > .social-media > a > svg {
 }
 
 .welcome > .text {
-  margin-left: 65px;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .welcome > .text > h1 {
