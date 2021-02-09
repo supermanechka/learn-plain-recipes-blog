@@ -167,7 +167,6 @@ input:hover {
 }
 
 .subscribe > button:hover {
-  color: #000000;
   cursor: pointer;
 }
 
@@ -260,7 +259,7 @@ input:hover {
 }
 
 .one-recipe-section .text {
-  margin-left: 50px;
+  padding: 0 50px;
   width: 45%;
   display: flex;
   flex-direction: column;
@@ -437,7 +436,6 @@ input:hover {
 }
 
 .subscribe-now > button:hover {
-  color: #000000;
   cursor: pointer;
 }
 
@@ -492,6 +490,10 @@ input:hover {
 
 .photo-6 {
   background-image: url('img/instagram-photo-6.jpeg');
+}
+
+.photo-7 {
+  background-image: url('img/instagram-photo-7.jpeg');
 }
 
 footer {
