@@ -1,7 +1,7 @@
 body {
   width: 100%;
   margin: 0 auto;
-  background-color: #fefefe;
+  background-color: #fbfbfb;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
 }
@@ -20,14 +20,19 @@ a:hover {
 }
 
 header {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   height: 90px;
-  padding: 0 30px;
   box-sizing: border-box;
   font-family: 'Roboto Mono', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header > .github {
+  position: relative;
+  right: 10px;
 }
 
 header > .github > a {
@@ -48,8 +53,8 @@ header > .social-media {
 }
 
 header > .social-media > a {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
 }
 
 header > .social-media > a + a {
@@ -57,13 +62,12 @@ header > .social-media > a + a {
 }
 
 header > .social-media > a > svg {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
 }
 
 .welcome {
   height: 500px;
-  margin-left: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,17 +78,24 @@ header > .social-media > a > svg {
   background-position: right;
 }
 
-.welcome > h1 {
+.welcome > .text {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.welcome > .text > h1 {
   width: 600px;
   font-size: 30px;
   line-height: 40px;
   font-weight: 500;
 }
 
-.welcome > p {
+.welcome > .text > p {
+  font-size: 17px;
   width: 550px;
-  line-height: 25px;
-  font-weight: 300;
+  line-height: 30px;
+  font-weight: 400;
+  color: #afafaf;
 }
 
 .profile {
@@ -107,14 +118,16 @@ header > .social-media > a > svg {
 .profile > .info > .date {
   font-size: 10px;
   margin-top: 5px;
+  color: #afafaf;
 }
 
 .subscribe {
   width: 90%;
+  margin: 0 auto;
   height: 110px;
-  margin: 70px auto 0;
   background-color: #ffffff;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -130,8 +143,10 @@ header > .social-media > a > svg {
   height: 30%;
   font-size: 15px;
   padding-left: 20px;
-  border: 1px solid #d3d3d3;
+  border-radius: 5px;
   outline: none;
+  border: none;
+  background-color: #f1f1f1;
 }
 
 input:hover {
@@ -140,28 +155,33 @@ input:hover {
 
 .subscribe > button {
   width: 12%;
-  height: 40%;
+  height: 35px;
   margin-right: 35px;
   font-size: 12px;
-  background-color: #000000;
-  border: 1px solid #000000;
+  font-weight: 600;
+  border-radius: 3px;
+  background-color: rgba(206, 144, 255, 1);
+  border: none;
   color: #ffffff;
   outline: none;
 }
 
 .subscribe > button:hover {
-  color: rgba(206, 144, 255, 1);
+  cursor: pointer;
+  background-color: rgba(194 137 239);
 }
 
 .photo-gallery {
+  width: 80%;
+  margin: 70px auto 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 70px;
 }
 
 .recipe-card {
   width: 240px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,7 +233,7 @@ input:hover {
 .icons > svg {
   width: 19px;
   height: 19px;
-  margin-right: 3px;
+  margin-right: 10px;
 }
 
 .article {
@@ -221,57 +241,64 @@ input:hover {
 }
 
 .one-recipe-section {
-  height: 400px;
-  margin: 70px 90px 0 90px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  background-color: #ffffff;
+  width: 80%;
+  margin: 70px auto 0;
+  border-radius: 5px;
   font-family: 'Roboto', sans-serif;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.one-recipe-section .photo {
+  height: 400px;
+  width: 50%;
   background-image: url('img/one-recipe-section-photo.jpg');
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 50%;
+  background-size: 100%;
 }
 
-.block-one-recipe-section {
-  margin-left: 700px;
+.one-recipe-section .text {
+  padding: 0 50px;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-.block-one-recipe-section > h1 {
-  margin-top: 0;
+.one-recipe-section h1 {
   font-size: 20px;
   font-weight: 500;
 }
 
-.block-one-recipe-section > p {
-  width: 550px;
-  line-height: 25px;
+.one-recipe-section p {
   font-weight: 300;
+  line-height: 20px;
 }
 
-.block-one-recipe-section > p:nth-of-type(2) {
-  margin: 0;
-}
-
-.block-one-recipe-section > .icons {
-  margin-right: 0;
-}
-
-.block-one-recipe-section > .profile > .avatar {
+.one-recipe-section .avatar {
   background-image: url('img/avatar-2.jpg');
 }
 
 .second-recipe-section {
-  margin: 70px 90px 0 90px;
+  width: 80%;
+  margin: 70px auto 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.second-recipe-section .recipe-card {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.second-recipe-section .recipe-text {
+  margin: 0 15px 15px;
 }
 
 .second-recipe-section > aside {
@@ -295,7 +322,12 @@ input:hover {
   width: 100%;
 }
 
-.second-recipe-section > aside > .recipe-card > .profile > .avatar {
+.second-recipe-section
+  > aside
+  > .recipe-card
+  > .recipe-text
+  > .profile
+  > .avatar {
   width: 45px;
   height: 45px;
 }
@@ -303,6 +335,7 @@ input:hover {
 .second-recipe-section
   > aside
   > .recipe-card:first-of-type
+  > .recipe-text
   > .profile
   > .avatar {
   background-image: url('img/avatar-3.jpg');
@@ -315,6 +348,7 @@ input:hover {
 .second-recipe-section
   > aside
   > .recipe-card:nth-of-type(2)
+  > .recipe-text
   > .profile
   > .avatar {
   background-image: url('img/avatar-4.jpg');
@@ -329,6 +363,8 @@ input:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   background-color: #ffffff;
 }
 
@@ -348,12 +384,8 @@ input:hover {
 
 .big-recipe-card p {
   width: 100%;
-  line-height: 25px;
   font-weight: 300;
-}
-
-.big-recipe-card > .content {
-  margin: 0 5% 0 5%;
+  line-height: 20px;
 }
 
 .big-recipe-card .avatar {
@@ -374,8 +406,9 @@ input:hover {
 }
 
 .subscribe-now {
-  height: 270px;
-  margin: 70px 90px 0 90px;
+  width: 100%;
+  margin: 70px auto 0;
+  height: 400px;
   background-color: #000000;
   display: flex;
   flex-direction: column;
@@ -387,28 +420,34 @@ input:hover {
 }
 
 .subscribe-now p {
-  font-weight: 500;
+  width: 500px;
+  font-weight: 300;
   font-size: 20px;
+  line-height: 30px;
+  text-align: center;
   color: #ffffff;
 }
 
 .subscribe-now > button {
-  width: 20%;
-  height: 20%;
-  margin-right: 35px;
+  width: 15%;
+  height: 45px;
   font-size: 12px;
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
-  color: #000000;
+  font-weight: 600;
+  border-radius: 3px;
+  border: none;
   outline: none;
+  color: #ffffff;
+  background-color: rgba(206, 144, 255, 1);
 }
 
 .subscribe-now > button:hover {
-  color: rgba(206, 144, 255, 1);
+  cursor: pointer;
+  background-color: rgba(194 137 239);
 }
 
 .instagram-block {
-  margin: 70px 90px 0 90px;
+  width: 80%;
+  margin: 70px auto 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -416,7 +455,8 @@ input:hover {
 }
 
 .instagram-block p {
-  line-height: 20px;
+  font-weight: 300;
+  font-size: 20px;
 }
 
 .instagram-photo {
@@ -459,10 +499,15 @@ input:hover {
   background-image: url('img/instagram-photo-6.jpeg');
 }
 
+.photo-7 {
+  background-image: url('img/instagram-photo-7.jpeg');
+}
+
 footer {
+  width: 80%;
   height: 90px;
   padding: 0 30px;
-  margin: 70px 90px 0 90px;
+  margin: 70px auto 0;
   box-sizing: border-box;
   font-size: 12px;
   display: flex;
