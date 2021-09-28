@@ -30,6 +30,18 @@ header {
   align-items: center;
 }
 
+@media (min-width: 1440px) {
+  header {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    width: 85%;
+  }
+}
+
 header > .github {
   position: relative;
   right: 10px;
@@ -39,11 +51,17 @@ header > .github > a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
+}
+
+@media (min-width: 1440px) {
+  header > .github > a {
+    font-size: 15px;
+  }
 }
 
 header > .github > a > svg {
   width: 50px;
-  height: 50px;
 }
 
 header > .social-media {
@@ -54,7 +72,6 @@ header > .social-media {
 
 header > .social-media > a {
   width: 20px;
-  height: 20px;
 }
 
 header > .social-media > a + a {
@@ -62,12 +79,11 @@ header > .social-media > a + a {
 }
 
 header > .social-media > a > svg {
-  width: 20px;
   height: 20px;
 }
 
 .welcome {
-  height: 500px;
+  height: 451px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,6 +92,13 @@ header > .social-media > a > svg {
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: right;
+}
+
+@media (min-width: 1440px) {
+  .welcome {
+    margin-bottom: 50px;
+    height: 500px;
+  }
 }
 
 .welcome > .text {
@@ -99,10 +122,16 @@ header > .social-media > a > svg {
 }
 
 .profile {
-  margin-top: 20px;
+  margin-top: 35px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+@media (min-width: 1440px) {
+  .profile {
+    margin-top: 20px;
+  }
 }
 
 .profile > .avatar {
@@ -122,7 +151,7 @@ header > .social-media > a > svg {
 }
 
 .subscribe {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   height: 110px;
   background-color: #ffffff;
@@ -133,9 +162,22 @@ header > .social-media > a > svg {
   align-items: center;
 }
 
+@media (min-width: 1440px) {
+  .subscribe {
+    width: 90%;
+  }
+}
+
 .subscribe > p {
   font-weight: 500;
   font-size: 17px;
+  margin-left: 25px;
+}
+
+@media (min-width: 1440px) {
+  .subscribe > p {
+    margin-left: 0;
+  }
 }
 
 .subscribe > input {
@@ -147,6 +189,12 @@ header > .social-media > a > svg {
   outline: none;
   border: none;
   background-color: #f1f1f1;
+}
+
+@media (min-width: 768px) {
+  .subscribe > input {
+    width: 15%;
+  }
 }
 
 input:hover {
@@ -172,28 +220,51 @@ input:hover {
 }
 
 .photo-gallery {
-  width: 80%;
-  margin: 70px auto 0;
+  width: 95%;
+  margin: 70px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+@media (min-width: 1440px) {
+  .photo-gallery {
+    width: 80%;
+  }
+}
+
 .recipe-card {
-  width: 240px;
+  width: 100%;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin-right: 30px;
+}
+
+.photo-gallery .recipe-card:last-of-type {
+  margin-right: 0;
 }
 
 .recipe-photo {
-  width: 240px;
-  height: 300px;
+  width: 100%;
+  height: 255px;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 1440px) {
+  .recipe-photo {
+    height: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .recipe-photo {
+    height: 280px;
+  }
 }
 
 .recipe-1 {
@@ -226,8 +297,46 @@ input:hover {
   color: grey;
 }
 
+@media (min-width: 768px) {
+  .icons {
+    width: 105%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1024px) {
+  .icons {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 1024px) {
+  .recipe-text .icons {
+    width: 103%;
+  }
+}
+
 .icons > p:first-of-type {
   margin-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .icons > p:first-of-type {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .icons > p:first-of-type {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .icons > p:first-of-type {
+    margin-right: 15px;
+  }
 }
 
 .icons > svg {
@@ -237,7 +346,20 @@ input:hover {
 }
 
 .article {
+  width: 95%;
   line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .article {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .article {
+    width: 100%;
+  }
 }
 
 .one-recipe-section {
@@ -250,6 +372,12 @@ input:hover {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .one-recipe-section {
+    width: 90%;
+  }
 }
 
 .one-recipe-section .photo {
@@ -285,11 +413,17 @@ input:hover {
 }
 
 .second-recipe-section {
-  width: 80%;
+  width: 95%;
   margin: 70px auto 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+@media (min-width: 1440px) {
+  .second-recipe-section {
+    width: 80%;
+  }
 }
 
 .second-recipe-section .recipe-card {
@@ -312,6 +446,12 @@ input:hover {
 .second-recipe-section > aside > .recipe-card {
   width: 100%;
   height: 320px;
+}
+
+@media (min-width: 768px) {
+  .second-recipe-section > aside > .recipe-card {
+    height: 338px;
+  }
 }
 
 .second-recipe-section > aside > .recipe-card + .recipe-card {
@@ -392,6 +532,10 @@ input:hover {
   background-image: url('img/avatar-5.jpg');
 }
 
+.big-recipe-card .icons {
+  flex-wrap: nowrap;
+}
+
 .recipe-8 {
   width: 100%;
   background-image: url('img/recipe-8.jpg');
@@ -447,11 +591,17 @@ input:hover {
 
 .instagram-block {
   width: 80%;
-  margin: 70px auto 0;
+  margin: 70px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .instagram-block {
+    width: 90%;
+  }
 }
 
 .instagram-block p {
@@ -469,10 +619,15 @@ input:hover {
 
 .instagram-block > .instagram-photo > .photo {
   width: 170px;
-  height: 170px;
+  height: 130px;
+  margin-right: 10px;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.instagram-block > .instagram-photo > .photo:last-of-type {
+  margin-right: 0;
 }
 
 .photo-1 {
@@ -506,13 +661,24 @@ input:hover {
 footer {
   width: 80%;
   height: 90px;
-  padding: 0 30px;
-  margin: 70px auto 0;
+  margin: auto;
   box-sizing: border-box;
-  font-size: 12px;
+  font-size: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  footer {
+    width: 85px;
+  }
+}
+
+@media (min-width: 1440px) {
+  footer {
+    font-size: 12px;
+  }
 }
 
 footer > p {
@@ -536,6 +702,11 @@ footer > .social-media > a + a {
 }
 
 footer > .social-media > a > svg {
-  width: 15px;
-  height: 15px;
+  height: 20px;
+}
+
+@media (min-width: 1440px) {
+  footer > .social-media > a > svg {
+    height: 15px;
+  }
 }
