@@ -669,12 +669,6 @@ footer {
   align-items: center;
 }
 
-@media (min-width: 768px) {
-  footer {
-    width: 85px;
-  }
-}
-
 @media (min-width: 1440px) {
   footer {
     font-size: 12px;
